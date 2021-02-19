@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test.css">
+
+    <title>Document</title>
+</head>
+<body style="background: darkgray;">
+    <section>
+        <div class="container">
+            <div class="contact-form">
+                <h1>Contact</h1>
+                <hr>
+                    <div class="cont">
+                        <label for="name"></label>
+                        <input type="text" id="name" name="name" placeholder="Your Name">
+                    </div>
+
+                    <div class="cont">
+                        <label for="email"></label>
+                        <input type="email" id="email" name="email" placeholder="email@example.com">
+                    </div>
+
+                    <div class="cont">
+                        <label for="subject"></label>
+                        <input type="subject" id="subject" name="subject" placeholder="subject">
+                    </div>
+
+                    <div class="cont">
+                        <label for="message"></label>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message"></textarea>
+                    </div>
+                    <button id="result">Send Message</button>
+            </div>
+        </div>
+    </section>
+
+    <div id="contact-model">
+
+        <span> Your name:</span><p id="names"></p>
+        <span> Your email:</span><p id="emails"></p>
+        <span> The subject:</span><p id="subjects"></p>
+        <span> Your message:</span><p id="msgs"></p>
+
+        <button id="close" >Close</button>
+    </div>
+
+
+
+
+<form name="form">
+    <select name="vehicle">
+    <option>Choose a vehicle</option>
+    <option>Motorbike</option>
+    <option>Subcompact</option>
+    <option>Compact</option>
+    <option>Sedan</option>
+    <option>Utility</option>
+    <option>Heavy Equipement</option>
+    <option>Trucks</option>
+</select>
+
+<select name="fuel">
+    <option>Choose Fuel</option>
+    <option></option>
+    <option></option>
+    <option></option>
+    <option></option>
+</select>
+
+<select name="gear">
+    <option>Choose a gear</option>
+    <option></option>
+</select>
+
+<input type="number"> 
+
+<button>Calculate Price</button>
+
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+<script src="test.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+</html>
