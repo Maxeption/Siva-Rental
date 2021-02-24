@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>SivaRental</title>
     <meta name='cars'>
     <meta name='car'>
     <meta name='Rental'>
@@ -26,52 +26,63 @@
                 <li><a href="contact.html">Contact Us</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
             </div>
-            <a class="cta" href="reservation.html"><button>Reserve Now</button></a>
+            <a class="cta" href="#"><button>Reserve Now</button></a>
         </ul>
     </nav>
 </header>
 
 
-<body class="contact">
+<body class="reservation">
     
-    <section>
-        <div class="container">
-            <div class="contact-form">
-                <h1>Contact</h1>
-                <hr>
+    <div class="carsh">
+        <h1 class="h1">Reserve a vehicle</h1>
+        <hr>
+        <h2 class="h2"></h2>
+    </div>
 
-                    <div class="cont">
-                        <label for="name"></label>
-                        <input required type="text" id="name" name="name" placeholder="Your Name">
-                    </div>
+    <form class="res" name="form">
+        <select class="res_sel" name="vehicle">
+            <option>Choose a vehicle</option>
+            <option value="Motorbike">Motorbike</option>
+            <option value="compact">Compact</option>
+            <option value="subcompact">Subcompact</option>
+            <option value="utility">Utility</option>
+            <option value="Sedan">Sedan</option>
+            <option value="truck">Trucks</option>
+            <option value="heavy equipement">Heavy Equipement</option>
+        </select>
+    
+        <select class="res_sel" name="fuel">
+            <option>Choose Fuel</option>
+            <option></option>
+            <option></option>
+            <option></option>
+            <option></option>
+        </select>
+    
+        <select class="res_sel" name="gear">
+            <option>Choose a gear</option>
+            <option></option>
+        </select>
+    
+        <input type="number"> 
+    
+        <button id="calculation">Calculate Price</button>
 
-                    <div class="cont">
-                        <label for="email"></label>
-                        <input  type="email" id="email" name="email" placeholder="email@example.com" required>
-                    </div>
+    <div class="price_t">
+        <h1 id="price_f">0.00</h1>
+        <h2>Dollars</h2>
+    </div>
 
-                    <div class="cont">
-                        <label for="subject"></label>
-                        <input required type="subject" id="subject" name="subject" placeholder="Subject">
-                    </div>
-
-                    <div class="cont">
-                        <label for="message"></label>
-                        <textarea required name="message" id="message" cols="30" rows="10" placeholder="Your message"></textarea>
-                    </div>
-
-                    <button id="result" class="send-msg-cta" value="Send message"> Send message </button>
-
-            </div>
-        </div>
-    </section>
+    </form>
+    
 
 
 </body>
-<script src="test.js"></script>
+<script src="reservation.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
-<footer>
+<footer class="reservations">
     <div class="f-cont">
         <hr>
         <div class="f-elements">

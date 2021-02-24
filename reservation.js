@@ -1,29 +1,3 @@
-
-
-
-    document.getElementById("result").addEventListener('click', function () {
-
-
-    var name = document.getElementById("name").value;
-    var email= document.getElementById("email").value;
-    var subject = document.getElementById("subject").value;
-    var message = document.getElementById("message").value;
-
-    if (name == "" || email == "" || subject == "" || message == "") {
-        
-    Swal.fire('Error...', "Please fill the form!", 'error',);
-
-
-
-    }
-    else {
-
-    Swal.fire('Received!', `Name: ${name} <br> Email: ${email} <br> Subject: ${subject} <br> Message: ${message}`, 'success',);
-    }
-});
-
-
-
 function remove_fuel() {
     for (let i = 1; i < form.fuel.length; i++) {
         form.fuel.options[i].innerText = '';

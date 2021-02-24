@@ -41,6 +41,7 @@ h2{
     background-image: url(assets/Tesla-Cybertruck.jpg);
     font-family: "Poppins";
     background-repeat: no-repeat;
+    
 }
 
 .gallery{
@@ -55,10 +56,71 @@ h2{
     background-image: url(assets/real_cf_@2X.png);
 }
 
+.reservation{
+    background-color: rgb(59, 59, 59);
+    font-family: "Poppins";
+    background-image: url(assets/real_cf_@2X.png);
+}
+
 .desc{
     font-size: 30px;
     color: white;
 }
+
+.res{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: fit-content;
+    align-items: center;
+    margin: 100px auto;  
+}
+
+.res select{
+    padding: 5%;
+    margin: 20px;
+    border-radius: 15px;
+    width: 400px;
+    font-weight: bold;
+    font-family: 'Poppins';
+}
+
+#price_f{
+    margin-top: 0px;
+    color: white;
+}
+
+.price_t{
+    margin-top: 80px;
+    color: white;
+    border: solid 3px crimson;
+    border-radius: 15px 50px 15px 15px;
+    padding: 15px;
+}
+
+.res select:hover{
+    background-color: crimson;
+    color: white;
+}
+
+.res button{
+    margin-top: 32px;
+    width: 400px;
+    height: 84px;
+}
+
+.reservations .f-cont{
+    margin-top: 0px;
+}
+
+.res input{
+    margin-top: 32px;
+    width: 400px;
+    height: 84px;
+    text-align: center;
+    font-size: 30px;
+}
+
 
 .send-msg-cta{
     background-color: white;
@@ -93,7 +155,10 @@ h2{
 textarea{
     resize: none;
     outline: none;
+    text-align: center;
+    font-size: x-large;
 }
+
 
 .contact-form{
     width: 500px;
@@ -163,6 +228,10 @@ li, a, button{
     cursor: pointer;
     display: flex;
     align-items: center;
+}
+
+.logo:hover{
+    
 }
 
 .navy{
@@ -295,7 +364,9 @@ button:hover {
     justify-content: center;
     flex-direction: column;
     position: absolute;
-    width: fit-content;
+    width: 1903px;
+    background-color: black;
+    margin-top: 779px;
 }
 
 .f-logo{
