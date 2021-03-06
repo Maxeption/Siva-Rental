@@ -67,7 +67,7 @@ document.querySelector("#calculation").addEventListener('click', function (e) {
     let day = document.querySelector("body > form > input[type=number]").value;
     let price;
     console.log(cars);
-    console.log(carfuel);
+    console.log(carfue l);
     console.log(gear);
 
     // motorbike transmission calculation

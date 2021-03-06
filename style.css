@@ -1,18 +1,50 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@keyframes glow {
+    from {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff, 0 0 60px #fff;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px rgb(194, 153, 21), 0 0 40px rgb(194, 153, 21), 0 0 50px rgb(194, 153, 21), 0 0 60px rgb(194, 153, 21), 0 0 70px rgb(194, 153, 21), 0 0 80px rgb(194, 153, 21);
+    }
+  }
 
 * {
     box-sizing: border-box;
     margin: 0;
 }
 
+video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    margin-top: 80px;
+  }
+
+.titlestuff{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column ;
+    margin: 400px auto;
+}
+
+.main{
+    font-family: "Poppins";
+    background-color: black;
+}
+
 h1{
     font-family: 'Josefin Sans';
     font-size: 70px;
     text-align: center;
-    color: rgb(182, 182, 182);
-    margin-top: 100px;
+    color: rgb(255, 255, 255);
+    animation: glow 3s ease-in-out infinite alternate;
 }
 hr{
     margin: 5px auto;
@@ -37,12 +69,7 @@ h2{
     font-size: 30px;
 }
 
-.main{
-    background-image: url(assets/Tesla-Cybertruck.jpg);
-    font-family: "Poppins";
-    background-repeat: no-repeat;
-    
-}
+
 
 .gallery{
     background-color: rgb(22, 22, 22);
@@ -88,6 +115,7 @@ h2{
 #price_f{
     margin-top: 0px;
     color: white;
+    animation: none;
 }
 
 .price_t{
@@ -170,8 +198,21 @@ textarea{
     margin-top: 100px;
 }
 
+.h1{
+    margin-top: 100px;
+    animation: none;
+}
+
 .contact-form h1{ 
     margin-top: 0;
+    animation: none;
+}
+img{
+    transition: transform .2s;
+}
+
+img:hover{
+    transform: scale(1.2, 1.2)
 }
 
 .contact-form hr{ 
@@ -221,6 +262,9 @@ li, a, button{
     justify-content: space-between;
     align-items: center;
     padding: 20px 192px;
+    width: 99vw;
+    background-color: black;
+
 }
 
 
@@ -260,14 +304,23 @@ button{
     background-color: rgb(104, 104, 104);
     border: none;
     cursor: pointer;
-    transition: all 1s ease 0s;
+    transition: all 0.5s ease 0s;
     outline: none;
- 
+}
+
+
+
+.cta1{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 30px;
 }
 
 button:hover {
     background-color: crimson;
     border-radius: 50px;
+    transform: scale(1.1, 1.1)
 }
 
 .naver{
@@ -277,6 +330,7 @@ button:hover {
     justify-content: space-between;
 
 }
+
 
 
 .bike{
@@ -364,9 +418,9 @@ button:hover {
     justify-content: center;
     flex-direction: column;
     position: absolute;
-    width: 1903px;
-    background-color: black;
-    margin-top: 779px;
+    width: 100%
+
+
 }
 
 .f-logo{
@@ -387,14 +441,47 @@ justify-content: center;
     justify-content: center;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
 
     .ctg-action{
         flex-flow: wrap;
     }
 
-    .hr{
-        width: auto;
+    hr{
+display: none;
+    }
+
+    .navbar{
+        padding: 0;
+        font-size: 20px;
+        align-self: center;
+}
+
+    .navy{
+        flex-direction: column;
+    }
+
+    .logo{
+        display: flex;
+        justify-content: center;
+    }
+
+    .naver{
+        margin: 20px 100px 0px 100px;
+    }
+
+    .cta{
+        display: none;
+    }
+
+    video{
+        margin-top: 100px;
+    }
+
+    li{
+        margin: 0 10px;
+        text-align: center;
     }
 
   }
+
